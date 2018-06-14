@@ -44,22 +44,23 @@ public class RestaurantsFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
+        locations.add(new Location(R.string.restaurant1Name, R.string.restaurant1Price,
+                R.drawable.headlight, R.string.restaurant1Info));
+        locations.add(new Location(R.string.restaurant2Name, R.string.restaurant2Price,
+                R.drawable.barrel, R.string.restaurant1Info));
+        locations.add(new Location(R.string.restaurant3Name, R.string.restaurant3Price,
+                R.drawable.benjamin, R.string.restaurant1Info));
+        locations.add(new Location(R.string.restaurant4Name, R.string.restaurant4Price,
+                R.drawable.atrium, R.string.restaurant1Info));
+        locations.add(new Location(R.string.restaurant5Name, R.string.restaurant5Price,
+                R.drawable.ileana, R.string.restaurant1Info));
+        locations.add(new Location(R.string.restaurant6Name, R.string.restaurant6Price,
+                R.drawable.old, R.string.restaurant1Info));
+        locations.add(new Location(R.string.restaurant7Name, R.string.restaurant7Price,
+                R.drawable.supermamma, R.string.restaurant1Info));
+        locations.add(new Location(R.string.restaurant8Name, R.string.restaurant8Price,
+                R.drawable.wein, R.string.restaurant1Info));
+
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

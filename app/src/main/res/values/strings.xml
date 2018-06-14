@@ -83,5 +83,41 @@
     <string name="hotel8Name">Vestem hotel</string>
     <string name="hotel8Price"><b>"Price: "</b>$</string>
 
+    <string name="restaurant1Name">The headlight</string>
+    <string name="restaurant1Price"><b>"Price: "</b>$$</string>
+    <string name="restaurant1Info">aa</string>
+    <string name="restaurant2Name">The golden barrel</string>
+    <string name="restaurant2Price"><b>"Price: "</b>$$</string>
+    <string name="restaurant3Name">Benjamin steakhouse</string>
+    <string name="restaurant3Price"><b>"Price: "</b>$$$</string>
+    <string name="restaurant4Name">Atrium</string>
+    <string name="restaurant4Price"><b>"Price: "</b>$$</string>
+    <string name="restaurant5Name">Ileana Tavern</string>
+    <string name="restaurant5Price"><b>"Price: "</b>$$</string>
+    <string name="restaurant6Name">Old Lisbon</string>
+    <string name="restaurant6Price"><b>"Price: "</b>$$$</string>
+    <string name="restaurant7Name">Super mamma</string>
+    <string name="restaurant7Price"><b>"Price: "</b>$</string>
+    <string name="restaurant8Name">Weinkeller</string>
+    <string name="restaurant8Price"><b>"Price: "</b>$$</string>
+
+    <string name="event1Name">FITS</string>
+    <string name="event1Price"><b>"Price: "</b>$</string>
+    <string name="event1Info">11</string>
+    <string name="event2Name">Astra movie festival</string>
+    <string name="event2Price"><b>"Price: "</b>$$</string>
+    <string name="event3Name">Christmas Fair</string>
+    <string name="event3Price"><b>"Price: "</b>$$</string>
+    <string name="event4Name">Jazz festival</string>
+    <string name="event4Price"><b>"Price: "</b>$$$</string>
+    <string name="event5Name">Sibiu\'s rally</string>
+    <string name="event5Price"><b>"Price: "</b>$</string>
+    <string name="event6Name">CibinFest</string>
+    <string name="event6Price"><b>"Price: "</b>$$$</string>
+    <string name="event7Name">Romaniacs</string>
+    <string name="event7Price"><b>"Price: "</b>$$$</string>
+    <string name="event8Name">Full moon</string>
+    <string name="event8Price"><b>"Price: "</b>$$</string>
+
 
 </resources>

@@ -44,22 +44,22 @@ public class EventsFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
-        locations.add(new Location(R.string.landmark1Name, R.string.landmark2Price,
-                R.drawable.transfagarasan, R.string.landmark2info));
+        locations.add(new Location(R.string.event1Name, R.string.event1Price,
+                R.drawable.theatre, R.string.event1Info));
+        locations.add(new Location(R.string.event2Name, R.string.event2Price,
+                R.drawable.astramovie, R.string.event1Info));
+        locations.add(new Location(R.string.event3Name, R.string.event3Price,
+                R.drawable.christmas, R.string.event1Info));
+        locations.add(new Location(R.string.event4Name, R.string.event4Price,
+                R.drawable.jazz, R.string.event1Info));
+        locations.add(new Location(R.string.event5Name, R.string.event5Price,
+                R.drawable.rally, R.string.event1Info));
+        locations.add(new Location(R.string.event6Name, R.string.event6Price,
+                R.drawable.cibin, R.string.event1Info));
+        locations.add(new Location(R.string.event7Name, R.string.event7Price,
+                R.drawable.romaniacs, R.string.event1Info));
+        locations.add(new Location(R.string.event8Name, R.string.event8Price,
+                R.drawable.full, R.string.event1Info));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
