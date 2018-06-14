@@ -1,0 +1,87 @@
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Sibiu Tourguide</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_landmarks">SEE</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_hotels">STAY</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_restaurants">EAT</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_events">FEEL</string>
+
+
+    <!-- Vocabulary phrase for "Come here." [CHAR LIMIT=20] -->
+
+    <string name="phrase_come_here">Come here.</string>
+    <string name="landmark1Name">Transfagarasan</string>
+    <string name="landmark2Name">Bridge of lies</string>
+    <string name="landmark3Name">Astra museum</string>
+    <string name="landmark4Name">Big square</string>
+    <string name="landmark5Name">Brukental palace</string>
+    <string name="landmark6Name">Council tower</string>
+    <string name="landmark7Name">Natural history museum</string>
+    <string name="landmark8Name">Stair case</string>
+    <string name="landmark9Name">Most beautiful street</string>
+    <string name="landmark10Name">Ursuline church</string>
+
+    <string name="landmark1Price"><b>"Price: "</b>$</string>
+    <string name="landmark2Price"><b>"Price: "</b>$</string>
+    <string name="landmark3Price"><b>"Price: "</b>$$</string>
+    <string name="landmark4Price"><b>"Price: "</b>$</string>
+    <string name="landmark5Price"><b>"Price: "</b>$$$</string>
+    <string name="landmark6Price"><b>"Price: "</b>$$</string>
+    <string name="landmark7Price"><b>"Price: "</b>$$$</string>
+    <string name="landmark8Price"><b>"Price: "</b>$</string>
+    <string name="landmark9Price"><b>"Price: "</b>$</string>
+    <string name="landmark10Price"><b>"Price: "</b>$</string>
+    <string name="landmark1info">bla</string>
+    <string name="landmark2info">aa</string>
+    <string name="landmark3info">a</string>
+    <string name="landmark4info">aa</string>
+    <string name="landmark5info">aa</string>
+    <string name="landmark6info">aa</string>
+    <string name="landmark7info">ss</string>
+    <string name="landmark8info">aa</string>
+    <string name="landmark9info">aaa</string>
+    <string name="landmark10info">zaa</string>
+
+
+    <string name="hotel1Name">Continental Hotel</string>
+    <string name="hotel1Price"><b>"Price: "</b>$$$</string>
+    <string name="hotel1Info">aa</string>
+    <string name="hotel2Name">House Frieda</string>
+    <string name="hotel2Price"><b>"Price: "</b>$</string>
+    <string name="hotel3Name">Golden Tulip</string>
+    <string name="hotel3Price"><b>"Price: "</b>$$$</string>
+    <string name="hotel4Name">Rubin pension</string>
+    <string name="hotel4Price"><b>"Price: "</b>$</string>
+    <string name="hotel5Name">Hilton</string>
+    <string name="hotel5Price"><b>"Price: "</b>$$$</string>
+    <string name="hotel6Name">Ramada</string>
+    <string name="hotel6Price"><b>"Price: "</b>$$$</string>
+    <string name="hotel7Name">Silva</string>
+    <string name="hotel7Price"><b>"Price: "</b>$$</string>
+    <string name="hotel8Name">Vestem hotel</string>
+    <string name="hotel8Price"><b>"Price: "</b>$</string>
+
+
+</resources>
