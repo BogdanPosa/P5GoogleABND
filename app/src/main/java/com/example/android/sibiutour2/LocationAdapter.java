@@ -16,14 +16,12 @@
 package com.example.android.sibiutour2;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
 /**
@@ -32,17 +30,15 @@ import java.util.ArrayList;
  */
 public class LocationAdapter extends ArrayAdapter<Location> {
 
-    /** Resource ID for the background color for this list of words */
 
     /**
      * Create a new {@link LocationAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param words is the list of {@link Location}s to be displayed.
+     * @param locations is the list of {@link Location}s to be displayed.
      */
-    public LocationAdapter(Context context, ArrayList<Location> words) {
-        super(context, 0, words);
-
+    public LocationAdapter(Context context, ArrayList<Location> locations) {
+        super(context, 0, locations);
     }
 
     @Override
@@ -58,29 +54,22 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         Location currentLocation = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID location_name_text_view.
-        TextView locationName = (TextView) listItemView.findViewById(R.id.location_name_text_view);
+        TextView locationName = listItemView.findViewById(R.id.location_name_text_view);
         // Get the location name from the currentLocation object and set this text on
         // the locationName TextView.
         locationName.setText(currentLocation.getLocationName());
 
         // Find the TextView in the list_item.xml layout with the ID location_price_text_view.
-        TextView locationPrice = (TextView) listItemView.findViewById(R.id.location_price_text_view);
+        TextView locationPrice = listItemView.findViewById(R.id.location_price_text_view);
         // Get the price from the currentLocation object and set this text on
         // the locationPrice TextView.
         locationPrice.setText(currentLocation.getLocationPrice());
 
-        // Find the TextView in the list_item.xml layout with the ID location Info.
-        TextView infoTextView = (TextView) listItemView.findViewById(R.id.location_info);
-        // Get the Info from the currentLocation object and set this text on
-        // the infoTextView TextView.
-        infoTextView.setText(currentLocation.getLocationInfo());
-
 
         // Find the ImageView in the list_item.xml layout with the ID image.
-        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        ImageView imageView = listItemView.findViewById(R.id.image);
         // Display the provided image based on the resource ID
         imageView.setImageResource(currentLocation.getImageResourceId());
-
         return listItemView;
     }
 }

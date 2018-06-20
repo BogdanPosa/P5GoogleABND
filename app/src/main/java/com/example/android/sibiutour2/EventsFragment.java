@@ -21,7 +21,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -41,49 +40,36 @@ public class EventsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
-//TODO Add info to list items
         // Create a list of locations
-        final ArrayList<Location> locations = new ArrayList<Location>();
+        final ArrayList<Location> locations = new ArrayList<>();
         locations.add(new Location(R.string.event1Name, R.string.event1Price,
-                R.drawable.theatre, R.string.event1Info));
+                R.drawable.theatre));
         locations.add(new Location(R.string.event2Name, R.string.event2Price,
-                R.drawable.astramovie, R.string.event1Info));
+                R.drawable.astramovie));
         locations.add(new Location(R.string.event3Name, R.string.event3Price,
-                R.drawable.christmas, R.string.event1Info));
+                R.drawable.christmas));
         locations.add(new Location(R.string.event4Name, R.string.event4Price,
-                R.drawable.jazz, R.string.event1Info));
+                R.drawable.jazz));
         locations.add(new Location(R.string.event5Name, R.string.event5Price,
-                R.drawable.rally, R.string.event1Info));
+                R.drawable.rally));
         locations.add(new Location(R.string.event6Name, R.string.event6Price,
-                R.drawable.cibin, R.string.event1Info));
+                R.drawable.cibin));
         locations.add(new Location(R.string.event7Name, R.string.event7Price,
-                R.drawable.romaniacs, R.string.event1Info));
+                R.drawable.romaniacs));
         locations.add(new Location(R.string.event8Name, R.string.event8Price,
-                R.drawable.full, R.string.event1Info));
+                R.drawable.full));
 
         // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The
         // adapter knows how to create list items for each item in the list.
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link LocationAdapter}  so that the
         // {@link ListView} will display list items for each {@link Location} in the list.
         listView.setAdapter(adapter);
 
-//        // Set a click listener to show info when the list item is clicked on
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-//
-//
-//
-//                // Get the {@link Location} object at the given position the user clicked on
-//                Location location = locations.get(position);
-//
-//            }
-//        });
         return rootView;
     }
 }

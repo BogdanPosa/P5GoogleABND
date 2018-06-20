@@ -18,25 +18,16 @@ package com.example.android.sibiutour2;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-
-
 import java.util.ArrayList;
-
-import static android.util.Log.i;
 
 /**
  * {@link Fragment} that displays a list of color vocabulary words.
  */
 public class LandmarksFragment extends Fragment {
-
-    TextView textView2;
 
     public LandmarksFragment() {
         // Required empty public constructor
@@ -49,53 +40,38 @@ public class LandmarksFragment extends Fragment {
 
 
         // Create a list of landmarks
-        final ArrayList<Location> locations = new ArrayList<Location>();
+        final ArrayList<Location> locations = new ArrayList<>();
         locations.add(new Location(R.string.landmark1Name, R.string.landmark1Price,
-                R.drawable.transfagarasan, R.string.landmark1info));
+                R.drawable.transfagarasan));
         locations.add(new Location(R.string.landmark2Name, R.string.landmark2Price,
-                R.drawable.lies, R.string.landmark2info));
+                R.drawable.lies));
         locations.add(new Location(R.string.landmark3Name, R.string.landmark3Price,
-                R.drawable.astra, R.string.landmark3info));
+                R.drawable.astra));
         locations.add(new Location(R.string.landmark4Name, R.string.landmark4Price,
-                R.drawable.piatamare, R.string.landmark4info));
+                R.drawable.piatamare));
         locations.add(new Location(R.string.landmark5Name, R.string.landmark5Price,
-                R.drawable.bruck, R.string.landmark5info));
+                R.drawable.bruck));
         locations.add(new Location(R.string.landmark6Name, R.string.landmark6Price,
-                R.drawable.counciltower, R.string.landmark6info));
+                R.drawable.counciltower));
         locations.add(new Location(R.string.landmark7Name, R.string.landmark7Price,
-                R.drawable.istorienaturala, R.string.landmark7info));
+                R.drawable.istorienaturala));
         locations.add(new Location(R.string.landmark8Name, R.string.landmark8Price,
-                R.drawable.pasaj, R.string.landmark8info));
+                R.drawable.pasaj));
         locations.add(new Location(R.string.landmark9Name, R.string.landmark9Price,
-                R.drawable.beststreet, R.string.landmark9info));
+                R.drawable.beststreet));
         locations.add(new Location(R.string.landmark10Name, R.string.landmark10Price,
-                R.drawable.ursuline, R.string.landmark10info));
-
-        textView2 = rootView.findViewById(R.id.location_info);
+                R.drawable.ursuline));
 
         // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The
         // adapter knows how to create list items for each item in the list.
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link LocationAdapter} created above, so that the
         // {@link ListView} will display list items for each {@link Location} in the list.
         listView.setAdapter(adapter);
-
-
-
-//        // Set a click listener to show info when the list item is clicked on
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-//
-//                // Get the {@link Word} object at the given position the user clicked on
-//                Location location = locations.get(position);
-//
-//            }
-//        });
 
         return rootView;
     }

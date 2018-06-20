@@ -21,9 +21,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
-
 import java.util.ArrayList;
 
 /**
@@ -42,24 +40,24 @@ public class RestaurantsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
 
-        // Create a list of words
-        final ArrayList<Location> locations = new ArrayList<Location>();
+        // Create a list of locations
+        final ArrayList<Location> locations = new ArrayList<>();
         locations.add(new Location(R.string.restaurant1Name, R.string.restaurant1Price,
-                R.drawable.headlight, R.string.restaurant1Info));
+                R.drawable.headlight));
         locations.add(new Location(R.string.restaurant2Name, R.string.restaurant2Price,
-                R.drawable.barrel, R.string.restaurant1Info));
+                R.drawable.barrel));
         locations.add(new Location(R.string.restaurant3Name, R.string.restaurant3Price,
-                R.drawable.benjamin, R.string.restaurant1Info));
+                R.drawable.benjamin));
         locations.add(new Location(R.string.restaurant4Name, R.string.restaurant4Price,
-                R.drawable.atrium, R.string.restaurant1Info));
+                R.drawable.atrium));
         locations.add(new Location(R.string.restaurant5Name, R.string.restaurant5Price,
-                R.drawable.ileana, R.string.restaurant1Info));
+                R.drawable.ileana));
         locations.add(new Location(R.string.restaurant6Name, R.string.restaurant6Price,
-                R.drawable.old, R.string.restaurant1Info));
+                R.drawable.old));
         locations.add(new Location(R.string.restaurant7Name, R.string.restaurant7Price,
-                R.drawable.supermamma, R.string.restaurant1Info));
+                R.drawable.supermamma));
         locations.add(new Location(R.string.restaurant8Name, R.string.restaurant8Price,
-                R.drawable.wein, R.string.restaurant1Info));
+                R.drawable.wein));
 
 
         // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The
@@ -67,26 +65,11 @@ public class RestaurantsFragment extends Fragment {
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link LocationAdapter} created above, so that the
         // {@link ListView} will display list items for each {@link Location} in the list.
         listView.setAdapter(adapter);
-
-//        // Set a click listener to play the audio when the list item is clicked on
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-//
-//
-//
-//                // Get the {@link Word} object at the given position the user clicked on
-//                Location location = locations.get(position);
-//
-//
-//            }
-//        });
-
         return rootView;
     }
 }

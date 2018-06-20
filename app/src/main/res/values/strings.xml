@@ -15,8 +15,7 @@
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_events">FEEL</string>
 
-
-
+    <!-- Landmark fragment strings-->
     <string name="landmark1Name">Transfagarasan</string>
     <string name="landmark2Name">Bridge of lies</string>
     <string name="landmark3Name">Astra museum</string>
@@ -38,21 +37,10 @@
     <string name="landmark8Price"><b>"Price: "</b>$</string>
     <string name="landmark9Price"><b>"Price: "</b>$</string>
     <string name="landmark10Price"><b>"Price: "</b>$</string>
-    <string name="landmark1info">bla</string>
-    <string name="landmark2info">aa</string>
-    <string name="landmark3info">a</string>
-    <string name="landmark4info">aa</string>
-    <string name="landmark5info">aa</string>
-    <string name="landmark6info">aa</string>
-    <string name="landmark7info">ss</string>
-    <string name="landmark8info">aa</string>
-    <string name="landmark9info">aaa</string>
-    <string name="landmark10info">zaa</string>
 
-
+    <!-- Hotels fragment strings-->
     <string name="hotel1Name">Continental Hotel</string>
     <string name="hotel1Price"><b>"Price: "</b>$$$</string>
-    <string name="hotel1Info">aa</string>
     <string name="hotel2Name">House Frieda</string>
     <string name="hotel2Price"><b>"Price: "</b>$</string>
     <string name="hotel3Name">Golden Tulip</string>
@@ -68,9 +56,9 @@
     <string name="hotel8Name">Vestem hotel</string>
     <string name="hotel8Price"><b>"Price: "</b>$</string>
 
+    <!-- Restaurants fragment strings-->
     <string name="restaurant1Name">The headlight</string>
     <string name="restaurant1Price"><b>"Price: "</b>$$</string>
-    <string name="restaurant1Info">aa</string>
     <string name="restaurant2Name">The golden barrel</string>
     <string name="restaurant2Price"><b>"Price: "</b>$$</string>
     <string name="restaurant3Name">Benjamin steakhouse</string>
@@ -86,6 +74,7 @@
     <string name="restaurant8Name">Weinkeller</string>
     <string name="restaurant8Price"><b>"Price: "</b>$$</string>
 
+    <!-- Events fragment strings-->
     <string name="event1Name">FITS</string>
     <string name="event1Price"><b>"Price: "</b>$</string>
     <string name="event1Info">11</string>
@@ -103,6 +92,7 @@
     <string name="event7Price"><b>"Price: "</b>$$$</string>
     <string name="event8Name">Full moon</string>
     <string name="event8Price"><b>"Price: "</b>$$</string>
-
+    <string name="image_of_the_location">Image of the location</string>
+    <string name="banner_image">banner</string>
 
 </resources>

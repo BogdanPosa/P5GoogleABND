@@ -21,7 +21,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -42,23 +41,23 @@ public class HotelsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         // Create a list of hotels
-        final ArrayList<Location> locations = new ArrayList<Location>();
+        final ArrayList<Location> locations = new ArrayList<>();
         locations.add(new Location(R.string.hotel1Name, R.string.hotel1Price,
-                R.drawable.conti, R.string.hotel1Info));
+                R.drawable.conti));
         locations.add(new Location(R.string.hotel2Name, R.string.hotel2Price,
-                R.drawable.frieda, R.string.hotel1Info));
+                R.drawable.frieda));
         locations.add(new Location(R.string.hotel3Name, R.string.hotel3Price,
-                R.drawable.golden, R.string.hotel1Info));
+                R.drawable.golden));
         locations.add(new Location(R.string.hotel4Name, R.string.hotel4Price,
-                R.drawable.rubin, R.string.hotel1Info));
+                R.drawable.rubin));
         locations.add(new Location(R.string.hotel5Name, R.string.hotel5Price,
-                R.drawable.hilton, R.string.hotel1Info));
+                R.drawable.hilton));
         locations.add(new Location(R.string.hotel6Name, R.string.hotel6Price,
-                R.drawable.ramada, R.string.hotel1Info));
+                R.drawable.ramada));
         locations.add(new Location(R.string.hotel7Name, R.string.hotel7Price,
-                R.drawable.silva, R.string.hotel1Info));
+                R.drawable.silva));
         locations.add(new Location(R.string.hotel8Name, R.string.hotel8Price,
-                R.drawable.vestem, R.string.hotel1Info));
+                R.drawable.vestem));
 
 
         // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The
@@ -66,25 +65,12 @@ public class HotelsFragment extends Fragment {
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link LocationAdapter} so that the
         // {@link ListView} will display list items for each {@link Location} in the list.
         listView.setAdapter(adapter);
 
-//        // Set a click listener to play the audio when the list item is clicked on
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-//
-//
-//
-//                // Get the {@link Word} object at the given position the user clicked on
-//                Location location = locations.get(position);
-//
-//
-//            }
-//        });
         return rootView;
     }
 }

@@ -30,9 +30,6 @@ public class Location {
      */
     private int mLocationPrice;
 
-    /** String resource ID for the location price of the location */
-    private int mLocationInfo;
-
     /**
      * String resource ID for the location image of the location
      */
@@ -46,11 +43,10 @@ public class Location {
      * @param locationPrice is the string resource Id for the price of the location.
      * @param imageResourceId is the drawable resource ID for the image associated with the location
      */
-    public Location(int locationName, int locationPrice, int imageResourceId, int locationInfo) {
+    public Location(int locationName, int locationPrice, int imageResourceId) {
         mLocationName = locationName;
         mLocationPrice = locationPrice;
         mImageResourceId = imageResourceId;
-        mLocationInfo = locationInfo;
     }
 
     /**
@@ -68,17 +64,9 @@ public class Location {
     }
 
     /**
-     * Get the string resource ID for the info of the location.
-     */
-    public int getLocationInfo() {
-        return mLocationInfo;
-    }
-
-    /**
      * Return the image resource ID of the location.
      */
     public int getImageResourceId() {
         return mImageResourceId;
     }
-
 }
