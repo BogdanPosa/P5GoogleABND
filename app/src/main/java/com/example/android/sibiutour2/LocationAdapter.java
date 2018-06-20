@@ -33,18 +33,16 @@ import java.util.ArrayList;
 public class LocationAdapter extends ArrayAdapter<Location> {
 
     /** Resource ID for the background color for this list of words */
-    private int mColorResourceId;
 
     /**
      * Create a new {@link LocationAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
      * @param words is the list of {@link Location}s to be displayed.
-     * @param colorResourceId is the resource ID for the background color for this list of words
      */
-    public LocationAdapter(Context context, ArrayList<Location> words, int colorResourceId) {
+    public LocationAdapter(Context context, ArrayList<Location> words) {
         super(context, 0, words);
-        mColorResourceId = colorResourceId;
+
     }
 
     @Override
@@ -56,50 +54,33 @@ public class LocationAdapter extends ArrayAdapter<Location> {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link Word} object located at this position in the list
-        Location currentWord = getItem(position);
+        // Get the {@link Location} object located at this position in the list
+        Location currentLocation = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID miwok_text_view.
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.location_name_text_view);
-        // Get the Miwok translation from the currentWord object and set this text on
-        // the Miwok TextView.
-        miwokTextView.setText(currentWord.getLocationName());
+        // Find the TextView in the list_item.xml layout with the ID location_name_text_view.
+        TextView locationName = (TextView) listItemView.findViewById(R.id.location_name_text_view);
+        // Get the location name from the currentLocation object and set this text on
+        // the locationName TextView.
+        locationName.setText(currentLocation.getLocationName());
 
-        // Find the TextView in the list_item.xml layout with the ID default_text_view.
-        TextView defaultTextView = (TextView) listItemView.findViewById(R.id.location_price_text_view);
-        // Get the default translation from the currentWord object and set this text on
-        // the default TextView.
-        defaultTextView.setText(currentWord.getLocationPrice());
+        // Find the TextView in the list_item.xml layout with the ID location_price_text_view.
+        TextView locationPrice = (TextView) listItemView.findViewById(R.id.location_price_text_view);
+        // Get the price from the currentLocation object and set this text on
+        // the locationPrice TextView.
+        locationPrice.setText(currentLocation.getLocationPrice());
 
         // Find the TextView in the list_item.xml layout with the ID location Info.
         TextView infoTextView = (TextView) listItemView.findViewById(R.id.location_info);
-        // Get the default translation from the currentWord object and set this text on
-        // the default TextView.
-        infoTextView.setText(currentWord.getLocationInfo());
+        // Get the Info from the currentLocation object and set this text on
+        // the infoTextView TextView.
+        infoTextView.setText(currentLocation.getLocationInfo());
 
 
         // Find the ImageView in the list_item.xml layout with the ID image.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
-        // Check if an image is provided for this word or not
-        if (currentWord.hasImage()) {
-            // If an image is available, display the provided image based on the resource ID
-            imageView.setImageResource(currentWord.getImageResourceId());
-            // Make sure the view is visible
-            imageView.setVisibility(View.VISIBLE);
-        } else {
-            // Otherwise hide the ImageView (set visibility to GONE)
-            imageView.setVisibility(View.GONE);
-        }
+        // Display the provided image based on the resource ID
+        imageView.setImageResource(currentLocation.getImageResourceId());
 
-        // Set the theme color for the list item
-//        View textContainer = listItemView.findViewById(R.id.text_container);
-        // Find the color that the resource ID maps to
-//        int color = ContextCompat.getColor(getContext(), mColorResourceId);
-        // Set the background color of the text container View
-//        textContainer.setBackgroundColor(color);
-
-        // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
-        // the ListView.
         return listItemView;
     }
 }

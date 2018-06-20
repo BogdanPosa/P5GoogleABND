@@ -48,7 +48,7 @@ public class LandmarksFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
 
-        // Create a list of words
+        // Create a list of landmarks
         final ArrayList<Location> locations = new ArrayList<Location>();
         locations.add(new Location(R.string.landmark1Name, R.string.landmark1Price,
                 R.drawable.transfagarasan, R.string.landmark1info));
@@ -73,19 +73,16 @@ public class LandmarksFragment extends Fragment {
 
         textView2 = rootView.findViewById(R.id.location_info);
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link LocationAdapter}, whose data source is a list of {@link Location}s. The
         // adapter knows how to create list items for each item in the list.
-        LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_colors);
+        LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
-        // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_list.xml layout file.
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link LocationAdapter} created above, so that the
+        // {@link ListView} will display list items for each {@link Location} in the list.
         listView.setAdapter(adapter);
-
 
 
 
@@ -102,8 +99,4 @@ public class LandmarksFragment extends Fragment {
 
         return rootView;
     }
-
-
-
-
 }

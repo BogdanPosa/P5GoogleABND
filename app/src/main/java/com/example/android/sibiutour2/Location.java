@@ -17,35 +17,34 @@ package com.example.android.sibiutour2;
 
 /**
  * {@link Location} represents a vocabulary word that the user wants to learn.
- * It contains resource IDs for the default translation, Miwok translation, audio file, and
- * optional image file for that word.
+ * It contains resource IDs for the location name, price, image and info
+ *
  */
 public class Location {
 
     /** String resource ID for the default translation of the word */
     private int mLocationName;
 
-    /** String resource ID for the Miwok translation of the word */
+    /**
+     * String resource ID for the location name of the location
+     */
     private int mLocationPrice;
 
-    /** String resource ID for the Miwok translation of the word */
+    /** String resource ID for the location price of the location */
     private int mLocationInfo;
 
-    /** Image resource ID for the word */
-    private int mImageResourceId = NO_IMAGE_PROVIDED;
-
-    /** Constant value that represents no image was provided for this word */
-    private static final int NO_IMAGE_PROVIDED = -1;
-
+    /**
+     * String resource ID for the location image of the location
+     */
+    private int mImageResourceId;
 
 
     /**
-     * Create a new Word object.
+     * Create a new Location object.
      *
-     * @param locationName is the string resource ID for the word in a language that the
-     *                             user is already familiar with (such as English)
-     * @param locationPrice is the string resource Id for the word in the Miwok language
-     * @param imageResourceId is the drawable resource ID for the image associated with the word
+     * @param locationName is the string resource ID for the Location name
+     * @param locationPrice is the string resource Id for the price of the location.
+     * @param imageResourceId is the drawable resource ID for the image associated with the location
      */
     public Location(int locationName, int locationPrice, int imageResourceId, int locationInfo) {
         mLocationName = locationName;
@@ -55,7 +54,7 @@ public class Location {
     }
 
     /**
-     * Get the string resource ID for the default translation of the location.
+     * Get the string resource ID for the name of the location.
      */
     public int getLocationName() {
         return mLocationName;
@@ -67,25 +66,19 @@ public class Location {
     public int getLocationPrice() {
         return mLocationPrice;
     }
+
     /**
-     * Get the string resource ID for the price of the location.
+     * Get the string resource ID for the info of the location.
      */
     public int getLocationInfo() {
         return mLocationInfo;
     }
 
     /**
-     * Return the image resource ID of the word.
+     * Return the image resource ID of the location.
      */
     public int getImageResourceId() {
         return mImageResourceId;
-    }
-
-    /**
-     * Returns whether or not there is an image for this word.
-     */
-    public boolean hasImage() {
-        return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
 }
